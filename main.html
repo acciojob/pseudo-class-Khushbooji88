@@ -1,42 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Text Before and After Container</title>
-    
-    <style>
-        /* Style for the container element */
-        #container {
-            margin: 20px; /* Adds a 20px margin around the container */
-            padding: 20px; /* Adds padding inside the container */
-            border: 2px solid #000; /* Adds a solid black border around the container */
-            position: relative; /* Sets the container as the reference point for the pseudo-elements */
-        }
+  <style>
+    #container {
+      margin: 20px; /* Margin */
+    }
 
-        /* Pseudo-element to insert content before the container's main content */
-        #container::before {
-            content: "Before Text"; /* Text to be displayed before the container's content */
-            color: #f00; /* Red color */
-            font-size: 20px; /* Font size of 20px for the inserted text */
-            display: block; /* Ensures the text appears as a block (on its own line) */
-            margin-bottom: 10px; /* Adds space between the "Before Text" and the container content */
-        }
+    #container::before {
+      content: "Your before text"; /* Replace with your actual text */
+      color: #f00; /* Red color */
+      font-size: 20px; /* Font size */
+    }
 
-        /* Pseudo-element to insert content after the container's main content */
-        #container::after {
-            content: "After Text"; /* Text to be displayed after the container's content */
-            color: #f00; /* Red color */
-            font-size: 20px; /* Font size of 20px for the inserted text */
-            display: block; /* Ensures the text appears as a block (on its own line) */
-            margin-top: 10px; /* Adds space between the container content and the "After Text" */
-        }
-    </style>
+    #container::after {
+      content: "Your after text"; /* Replace with your actual text */
+      color: #f00; /* Red color */
+      font-size: 20px; /* Font size */
+    }
+  </style>
 </head>
-
-	<body>
-    <div id="container">
-        <p>This is the main content of the container.</p>
-    </div>
+<body>
+  <div id="container">
+    <!-- Your main content goes here -->
+  </div>
 </body>
 </html>
